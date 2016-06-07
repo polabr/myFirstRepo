@@ -11,6 +11,8 @@
 
 #pragma link C++ class sample+;
 #pragma link C++ class larlite::MichelSpectrum+;
+#pragma link C++ class larlite::MuonDecay+;
 //ADD_NEW_CLASS ... do not change this line
 #endif
+
 
