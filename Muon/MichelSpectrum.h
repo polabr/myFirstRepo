@@ -16,6 +16,11 @@
 #define LARLITE_MICHELSPECTRUM_H
 
 #include "Analysis/ana_base.h"
+// /DataFormat is where the classes are
+// mctrack is the class we are requesting; must declare it here in the header file
+#include "DataFormat/mctrack.h"
+
+#include "TH1D.h"
 
 namespace larlite {
   /**
@@ -51,7 +56,8 @@ namespace larlite {
 
   private:
     int _event_counter;
-    
+    TH1D* _muon_E;
+
   };
 }
 #endif
