@@ -8,13 +8,13 @@ namespace larlite {
   bool MuonDecay::initialize() {
 
     //
-    // This function is called in the beggining of event loop
+    // This function is called in the beginning of event loop
     // Do all variable initialization you wish to do here.
     // If you have a histogram to fill in the event loop, for example,
     // here is a good place to create one on the heap (i.e. "new TH1D"). 
     //
 
-    _electron_E=new TH1D("electron_energy","title;x;y",100,0,100);
+    _electron_E = new TH1D("electron_energy","title;x;y",100,0,100);
 
     return true;
   }
